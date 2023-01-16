@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donnée wikidata University</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur cette page. Elle montre les universités présentes dans les bases de données de Wikipédia</h1>
+    <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Funiversity%20%3FuniversityLabel%20%3Finception%20%3Fcoordinate_location%20%3Fstudents_count%20%3Fimage%20%3Fcountry%20%3FcountryLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Funiversity%20wdt%3AP31%20wd%3AQ3918.%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP571%20%3Finception.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP625%20%3Fcoordinate_location.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP2196%20%3Fstudents_count.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP18%20%3Fimage.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Funiversity%20wdt%3AP17%20%3Fcountry.%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+  </body>
+</html>
